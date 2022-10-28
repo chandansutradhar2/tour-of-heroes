@@ -4,5 +4,5 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#">Welcome {{userName}}</a></li>
-    <li><npstx-toggle-status [status]="isLoggedIn"></npstx-toggle-status></li>
+    <li><npstx-toggle-status [status]="isLoggedIn" (btnClicked)="onToggleStatus($event)"></npstx-toggle-status></li>
 </ul>

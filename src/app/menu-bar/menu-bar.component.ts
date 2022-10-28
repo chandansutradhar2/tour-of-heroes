@@ -20,4 +20,7 @@ export class MenuBarComponent implements OnInit {
     console.log('init of menu bar invoked')
   }
 
+  onToggleStatus(ev:boolean){
+    this.isLoggedIn=ev;
+  }
 }

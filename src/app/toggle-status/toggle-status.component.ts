@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'npstx-toggle-status',
@@ -11,6 +11,8 @@ export class ToggleStatusComponent implements OnInit {
 
   btnLabel="Logout";
 
+  @Output() btnClicked:EventEmitter<boolean>=new EventEmitter();
+
   constructor() {
     console.log('constructor of toggle status invoked',this.status)
    }
@@ -18,6 +20,10 @@ export class ToggleStatusComponent implements OnInit {
   ngOnInit(): void {
     console.log('init of toggle status invoked',this.status);
     this.status?this.btnLabel="Logout":this.btnLabel="Login";
+  }
+
+  handleClick(){
+    this.btnLabel=="Logout"?this.btnClicked.emit(true):this.btnClicked.emit(false);
   }
 
 }

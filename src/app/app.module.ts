@@ -12,6 +12,8 @@ import { CalcComponent } from './calc/calc.component';
 import { AvatarComponent } from './avatar/avatar.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { ToggleStatusComponent } from './toggle-status/toggle-status.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ToggleStatusComponent } from './toggle-status/toggle-status.component';
     CalcComponent,
     AvatarComponent,
     MenuBarComponent,
-    ToggleStatusComponent
+    ToggleStatusComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
