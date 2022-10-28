@@ -5,22 +5,22 @@
         </div>
         <div class="keypad">
             <div class="row">
-                <button (click)="onZeroPress()">0</button>
-                <button (click)="onOnePress()">1</button>
-                <button>2</button>
-                <button>3</button>
+                <button (click)="onNumpadPress('0')">0</button>
+                <button (click)="onNumpadPress('1')">1</button>
+                <button (click)="onNumpadPress('2')">2</button>
+                <button (click)="onNumpadPress('3')">3</button>
             </div>
             <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
+                <button (click)="onNumpadPress('4')">4</button>
+                <button (click)="onNumpadPress('5')">5</button>
+                <button (click)="onNumpadPress('6')">6</button>
+                <button (click)="onNumpadPress('7')">7</button>
             </div>
             <div class="row">
-                <button>8</button>
-                <button>9</button>
-                <button>=</button>
-                <button>+</button>
+                <button (click)="onNumpadPress('8')">8</button>
+                <button (click)="onNumpadPress('9')">9</button>
+                <button (click)="onEqualClicked()">=</button>
+                <button (click)="onAddPress()">+</button>
             </div>
             <div class="row">
                 <button>-</button>
