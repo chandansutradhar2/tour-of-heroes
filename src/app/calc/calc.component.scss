@@ -1,0 +1,30 @@
+.body{
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.container{
+    width:50vw;
+    height: 50vh;
+}
+
+.display{
+    width: 100%;
+margin-bottom: 10px;
+}
+
+input {
+width: 80%;
+padding: 15px;
+}
+.keypad{
+    display: grid;
+    grid-template-rows: auto;
+    margin-top: 25px;
+
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}

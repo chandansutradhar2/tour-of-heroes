@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LogoutComponent } from './logout/logout.component';
 import { FormsModule } from '@angular/forms';
+import { CalcComponent } from './calc/calc.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     LoginComponent,
     ForgotPasswordComponent,
-    LogoutComponent
+    LogoutComponent,
+    CalcComponent
   ],
   imports: [
     BrowserModule,
