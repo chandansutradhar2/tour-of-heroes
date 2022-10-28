@@ -18,6 +18,10 @@ export class AppComponent {
 
   onClick(){
     alert(this.userName);
+
+    //on ketporess event
+    //let val=document.getElementById("txt1").value;
+    //this.userName=value;
   }
 
 }

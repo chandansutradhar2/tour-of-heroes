@@ -1,6 +1,6 @@
 <h2>{{name}}</h2>
 <p>
-    Hello <input type="text" value={{userName}} />, Welcome back;
+    Hello <input type="text" [(ngModel)]="userName" />, Welcome back;
 
     <button (click)="onClick()">Show Value</button>
 </p>
