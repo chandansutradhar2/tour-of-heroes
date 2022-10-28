@@ -9,6 +9,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { LogoutComponent } from './logout/logout.component';
 import { FormsModule } from '@angular/forms';
 import { CalcComponent } from './calc/calc.component';
+import { AvatarComponent } from './avatar/avatar.component';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { ToggleStatusComponent } from './toggle-status/toggle-status.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { CalcComponent } from './calc/calc.component';
     LoginComponent,
     ForgotPasswordComponent,
     LogoutComponent,
-    CalcComponent
+    CalcComponent,
+    AvatarComponent,
+    MenuBarComponent,
+    ToggleStatusComponent
   ],
   imports: [
     BrowserModule,
