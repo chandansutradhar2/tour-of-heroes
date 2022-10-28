@@ -22,6 +22,18 @@ export class AppComponent {
     //on ketporess event
     //let val=document.getElementById("txt1").value;
     //this.userName=value;
+
   }
 
+  onEnter(ev:any){
+    console.log(ev.key);
+    ev.key=="Enter"?this.onClick():null;
+
+  }
+
+  onParaClick(ev:any){
+    console.log(ev);
+    ev.target.localName=='button'?null: alert('para cliked');
+  }
 }
+
