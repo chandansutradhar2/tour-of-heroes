@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -14,6 +13,12 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { ToggleStatusComponent } from './toggle-status/toggle-status.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { HomeComponent } from './home/home.component';
+import { RootRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './home/dashboard/dashboard.component';
+import { ProductListComponent } from './home/product-list/product-list.component';
+import { ContactComponent } from './home/contact/contact.component';
+import { ProductDetailsComponent } from './home/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +32,15 @@ import { ChildComponent } from './child/child.component';
     MenuBarComponent,
     ToggleStatusComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    HomeComponent,
+    DashboardComponent,
+    ProductListComponent,
+    ContactComponent,
+    ProductDetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-  ],
+  imports: [BrowserModule, FormsModule,RootRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

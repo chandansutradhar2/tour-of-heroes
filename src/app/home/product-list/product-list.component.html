@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let p of products">
+    <span (click)="navigate(p.id)">{{ p.id }}</span>
+    <span>{{ p.name }}</span>
+    <span>{{ p.rate }}</span>
+    <span>{{ p.qty }}</span>
+  </li>
+</ul>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'npstx-child',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
+  @Input() msg!:string;
+  @Output() onCNClick:EventEmitter<number>=new EventEmitter();
+
+  cnt:number=0;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  click(){
+    this.cnt++;
+    this.onCNClick.emit(this.cnt);
+
+  }
 }

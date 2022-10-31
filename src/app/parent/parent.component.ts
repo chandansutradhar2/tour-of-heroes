@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
+  counter:number=0;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  handleMe(ev:number){
+this.counter=ev;
+  }
 }
