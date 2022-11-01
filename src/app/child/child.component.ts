@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'npstx-child',
@@ -11,7 +12,14 @@ export class ChildComponent implements OnInit {
   @Output() onCNClick:EventEmitter<number>=new EventEmitter();
 
   cnt:number=0;
-  constructor() { }
+  constructor(private a:ActivatedRoute) { 
+  console.log(a);
+
+    a.params.subscribe(r=>{
+      console.log(r);
+    })
+
+  }
 
   ngOnInit(): void {
   }

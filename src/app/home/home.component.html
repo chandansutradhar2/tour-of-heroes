@@ -1,9 +1,23 @@
 <div class="container">
-    <h2>Home Component</h2>
+  <h2>Home Component</h2>
 
-    <button routerLink="dashboard">Dashboard</button>
-    <button (click)="onProductClicked()">Product List</button>
-    <button routerLink="contactus">Contact US</button>
+  <button routerLink="dashboard">Dashboard</button>
+  <button (click)="onProductClicked()">Product List</button>
+  <button routerLink="contactus">Contact US</button>
+  <button routerLink="parent">Parent</button>
 
-    <router-outlet></router-outlet>
+  <input
+    #myInput
+    *ngIf="show"
+    (keypress)="changeName(myInput)"
+    type="text"
+    [value]="userName"
+    [placeholder]="'Please'"
+  />
+
+  <input type="text" [(ngModel)]="userName" />
+
+  <label for="">{{ userName }} {{ customer.name }}</label>
+  <button (click)="showHide()">{{ show ? "HIDE" : "SHOW" }}</button>
+  <router-outlet></router-outlet>
 </div>
